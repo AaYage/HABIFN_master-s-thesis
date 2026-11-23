@@ -18,13 +18,6 @@ This repository accompanies the method and experiments in Chapters 4–5 of the 
 | MAM | Global-guided fusion of local responses; the fusion weight λ is derived from α (λ_M=α1, λ_F=α2) |
 | Output | Concatenation → fully connected → Sigmoid, producing the PD probability |
 
-The balance factor α is generated from the frame-wise mean and standard deviation of each branch representation:
-
-```
-σ = [μ(H_M); s(H_M); μ(H_F); s(H_F)]        # 4 × 256 = 1024
-r = softplus(W2 · LeakyReLU(W1 · LayerNorm(σ) + b1) + b2)
-α_i = r_i / (r1 + r2 + ε)                    # α1 + α2 = 1
-```
 
 ## 2. Repository Structure
 
