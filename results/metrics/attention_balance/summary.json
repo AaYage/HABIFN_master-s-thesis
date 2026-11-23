@@ -1,0 +1,81 @@
+{
+  "both": {
+    "entropy_m": {
+      "rho": -0.2572795456649896,
+      "p": 0.0004892035979991377
+    },
+    "entropy_f": {
+      "rho": 0.5403500108028025,
+      "p": 4.919611033656439e-15
+    },
+    "alpha_std": 0.07795155793428421,
+    "alpha_min": 0.36680686473846436,
+    "alpha_max": 0.6962347030639648,
+    "hm_hf_pearson": -0.1555022469496541,
+    "layer1_real": {
+      "rho_hm_alpha1": -0.7039229605852032,
+      "p_hm_alpha1": 3.0216125627695736e-28,
+      "rho_hf_alpha2": -0.840116464499933,
+      "p_hf_alpha2": 3.6353514315636445e-49
+    },
+    "dose": {
+      "layer0": {
+        "entropy_m_range": 0.1008230447769165,
+        "entropy_f_range": 0.1346086859703064,
+        "prob_range": 0.04062533378601074,
+        "rho_hm_alpha1": -1.0,
+        "rho_hf_alpha1": 1.0
+      },
+      "layer1": {
+        "entropy_m_range": 0.10595780611038208,
+        "entropy_f_range": 0.12542718648910522,
+        "prob_range": 0.04062533378601074,
+        "rho_hm_alpha1": -1.0,
+        "rho_hf_alpha1": 1.0
+      }
+    },
+    "paired_effect": {
+      "alpha1": 0.15,
+      "delta_mean": 0.03512838812332322,
+      "delta_ci95_low": 0.017311454565888156,
+      "delta_ci95_high": 0.05294532168075829,
+      "p_value": 0.00015557742088335766
+    }
+  },
+  "none": {
+    "entropy_m": {
+      "rho": NaN,
+      "p": NaN
+    },
+    "entropy_f": {
+      "rho": NaN,
+      "p": NaN
+    },
+    "alpha_std": 0.0,
+    "alpha_min": 0.5,
+    "alpha_max": 0.5,
+    "hm_hf_pearson": -0.07500991170283139,
+    "layer1_real": {
+      "rho_hm_alpha1": NaN,
+      "p_hm_alpha1": NaN,
+      "rho_hf_alpha2": NaN,
+      "p_hf_alpha2": NaN
+    },
+    "dose": {
+      "layer0": {
+        "entropy_m_range": 0.0,
+        "entropy_f_range": 0.0,
+        "prob_range": 0.0,
+        "rho_hm_alpha1": NaN,
+        "rho_hf_alpha1": NaN
+      },
+      "layer1": {
+        "entropy_m_range": 0.0,
+        "entropy_f_range": 0.0,
+        "prob_range": 0.0,
+        "rho_hm_alpha1": NaN,
+        "rho_hf_alpha1": NaN
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 虚拟环境
+envs/
+venv/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+
+# 数据与权重（不随仓库发布）
+data/
+checkpoints/
+logs/
+*.h5
+*.keras
+*.ckpt
+*.pb
+
+# 大体量结果
+results/raw/
+results/alpha_ablation/
+
+# 系统文件
+.DS_Store
+Thumbs.db

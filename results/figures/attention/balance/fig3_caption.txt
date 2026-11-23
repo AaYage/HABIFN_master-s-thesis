@@ -1,0 +1,6 @@
+Figure 3. Mechanism of the balance factor.
+(a) Distribution of the learned balance factor alpha1 on the test set (n = 180 recordings); the dashed line marks the neutral value 0.5.
+(b, c) Layer-1 normalized attention entropy versus the learned alpha1 (MFCC branch) and alpha2 (F0 branch); lines are linear fits, and rho and p denote Spearman correlation statistics.
+(d, e) Response to a forced balance factor at inference with fixed weights and inputs, where alpha1 + alpha2 = 1; red lines denote the fixed alpha = 0.5 control, and shaded regions denote 95% confidence intervals of the mean.
+(f) Paired change in predicted probability relative to alpha1 = 0.5 for the same recordings; the shaded region denotes the 95% confidence interval of the mean paired difference.
+Lower entropy indicates sharper attention.

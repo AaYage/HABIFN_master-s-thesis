@@ -1,0 +1,30 @@
+# Python 3.9，TensorFlow 2.10.1 GPU（CUDA 11.8 / cuDNN 8.6）
+# 安装: pip install -r requirements.txt
+# 说明: numpy/protobuf 采用与 TensorFlow 2.10 官方要求兼容的版本
+
+tensorflow==2.10.1
+keras==2.10.0
+numpy==1.23.5
+protobuf==3.19.6
+
+# 数值计算与数据处理
+pandas==1.5.3
+scipy>=1.7
+
+# 机器学习（数据划分、评估指标）
+scikit-learn==1.2.2
+
+# 语音特征提取（MFCC / F0）
+librosa==0.10.0
+soundfile==0.12.1
+praat-parselmouth==0.4.7
+
+# 可视化
+matplotlib==3.5.3
+seaborn==0.12.2
+
+# 进度条
+tqdm==4.65.0
+
+# 桌面界面（ui/ 目录）
+PySide6==6.4.0.1

@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PD_Diagnosis_Dialog</class>
+ <widget class="QDialog" name="PD_Diagnosis_Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>849</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>楷体</family>
+    <italic>false</italic>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="2">
+    <widget class="QFrame" name="frame_control">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>397</y>
+        <width>441</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>状态选择控制区</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_upload_File">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>420</y>
+        <width>221</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>上传音频文件</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_upload_Folder">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>450</y>
+        <width>221</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>上传音频文件夹</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_Process_Button">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>480</y>
+        <width>223</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>音频处理</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_model_detect">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>510</y>
+        <width>223</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开始诊断</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_Train_Button">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>420</y>
+        <width>221</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>训练模型</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_record_audio">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>450</y>
+        <width>221</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>实时录音</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_Clear_Button">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>480</y>
+        <width>221</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>清除数据</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_Export_Button">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>510</y>
+        <width>221</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>导出结果</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_file_group">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>151</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>15</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="lineWidth">
+       <number>5</number>
+      </property>
+      <property name="text">
+       <string>文件列表</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_Remove_File_Button">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>350</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>移除选中</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btn_Clear_Files_Button">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>350</y>
+        <width>121</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>清空列表</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="File_Count_Label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>200</y>
+        <width>431</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>文件数: 0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="File_Size_Label">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>270</y>
+        <width>431</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>楷体</family>
+        <pointsize>12</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>文件总大小: 0 kB</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="listView">
+      <property name="geometry">
+       <rect>
+        <x>-40</x>
+        <y>20</y>
+        <width>491</width>
+        <height>371</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QFrame" name="frame_info">
+      <property name="geometry">
+       <rect>
+        <x>451</x>
+        <y>0</y>
+        <width>431</width>
+        <height>549</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <widget class="QLabel" name="label_status">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>361</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>12</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>状态：就绪</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_pred_prob">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>60</y>
+         <width>361</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>12</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>预测概率：</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>110</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>17</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="value">
+        <number>24</number>
+       </property>
+      </widget>
+      <widget class="QListView" name="listView_2">
+       <property name="geometry">
+        <rect>
+         <x>-10</x>
+         <y>390</y>
+         <width>391</width>
+         <height>151</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_handwriting_Button">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>450</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>手写诊断</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_video_Button">
+       <property name="geometry">
+        <rect>
+         <x>240</x>
+         <y>490</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>视频诊断</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>210</x>
+         <y>400</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>楷体</family>
+         <pointsize>13</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>→请开始进一步检测</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_HandWriting_Button">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>450</y>
+         <width>121</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>HandWriting_T</string>
+       </property>
+       <property name="autoDefault">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </widget>
+     <zorder>listView</zorder>
+     <zorder>label_2</zorder>
+     <zorder>btn_upload_File</zorder>
+     <zorder>btn_upload_Folder</zorder>
+     <zorder>btn_Process_Button</zorder>
+     <zorder>btn_model_detect</zorder>
+     <zorder>btn_Train_Button</zorder>
+     <zorder>btn_record_audio</zorder>
+     <zorder>btn_Clear_Button</zorder>
+     <zorder>btn_Export_Button</zorder>
+     <zorder>label_file_group</zorder>
+     <zorder>btn_Remove_File_Button</zorder>
+     <zorder>btn_Clear_Files_Button</zorder>
+     <zorder>File_Count_Label</zorder>
+     <zorder>File_Size_Label</zorder>
+     <zorder>frame_info</zorder>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
